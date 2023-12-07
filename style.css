@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg,#08001f,#30197d);
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+}
+.logo{
+    background: #fff;
+    color: black;
+    height: 45px;
+    display: flex;
+    justify-content:left;
+    
+}
+.logo p{
+    position: absolute;
+    margin-left: 15px;
+    font-size: 35px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    color: aliceblue;
+    height: 125px;
+    width: 50%;
+    transform: translate(-50%,-50%);
+}
+.date {
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 0, 255, 0.11);
+    font-size: 55px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);    
+}
+.date span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.date #hr::after{
+    content: 'HOUR';
+    display: flex;
+    flex-direction:column ;
+    font-size: 12px;
+
+}
+.date #min::after{
+    content: 'MINS';
+    display: flex;
+    flex-direction:column ;
+    font-size: 12px;
+
+}
+.date #sec::after{
+    content: 'SECS';
+    display: flex;
+    flex-direction:column ;
+    font-size: 12px;
+
+}
+@media only screen and (max-width: 768px){
+    
+        .container{
+            position: absolute;
+            left: 50%;
+            top: 38%;
+            
+            color: aliceblue;
+            height: 125px;
+            width: 345px;
+            transform: translate(-50%,-50%);
+        }
+        
+    
+}
